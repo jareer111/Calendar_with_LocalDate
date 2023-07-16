@@ -15,11 +15,13 @@ public class Calendar {
 
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.printf(CYAN_BRIGHT+"Enter which calendar year you want to create =>  ");
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            System.out.printf(CYAN_BRIGHT + "Enter which calendar year you want to create =>  ");
 
-        int year = scanner.nextInt();
-        yearlyCalendar(year);
+            int year = scanner.nextInt();
+            yearlyCalendar(year);
+        }
 
     }
 
